@@ -1,0 +1,9 @@
+{
+  "slug": "spendmap",
+  "fresh_venv": "work/clean-envs/spendmap",
+  "fresh_checkout": "work/clean/spendmap",
+  "passed": true,
+  "failure": null,
+  "runtime": "Python 3.12.14",
+  "model_training": null
+}

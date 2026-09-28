@@ -1,0 +1,356 @@
+{
+  "bars": [
+    {
+      "label": "Dining",
+      "value": 14647.02
+    },
+    {
+      "label": "Entertainment",
+      "value": 13462.85
+    },
+    {
+      "label": "Groceries",
+      "value": 16492.82
+    },
+    {
+      "label": "Transport",
+      "value": 13089.01
+    },
+    {
+      "label": "Uncategorized",
+      "value": 49422.09
+    }
+  ],
+  "chart_title": "Spending by your categories",
+  "details": {
+    "cluster_counts": {
+      "0": 26,
+      "1": 16,
+      "2": 18
+    },
+    "method": "category shares + transaction frequency; standardized KMeans; descriptive segments, not prediction",
+    "monthly_cents": {
+      "2026-01": 1469905,
+      "2026-02": 1634223,
+      "2026-03": 1770210,
+      "2026-04": 1751109,
+      "2026-05": 1651342,
+      "2026-06": 2434590
+    },
+    "rules": {
+      "Cafe": "Dining",
+      "Market": "Groceries",
+      "Metro": "Transport",
+      "Stream": "Entertainment"
+    },
+    "total_cents": 10711379
+  },
+  "metrics": {
+    "Customers": 60,
+    "Silhouette": 0.268,
+    "Total spending": "$107,113.79",
+    "Transactions": 1000
+  },
+  "rows": [
+    {
+      "cluster": 1,
+      "customer": "C000",
+      "total_usd": 2363.05
+    },
+    {
+      "cluster": 0,
+      "customer": "C001",
+      "total_usd": 1518.52
+    },
+    {
+      "cluster": 2,
+      "customer": "C002",
+      "total_usd": 1014.32
+    },
+    {
+      "cluster": 1,
+      "customer": "C003",
+      "total_usd": 1537.32
+    },
+    {
+      "cluster": 0,
+      "customer": "C004",
+      "total_usd": 2282.0
+    },
+    {
+      "cluster": 2,
+      "customer": "C005",
+      "total_usd": 1062.27
+    },
+    {
+      "cluster": 1,
+      "customer": "C006",
+      "total_usd": 1130.97
+    },
+    {
+      "cluster": 0,
+      "customer": "C007",
+      "total_usd": 1835.11
+    },
+    {
+      "cluster": 2,
+      "customer": "C008",
+      "total_usd": 910.88
+    },
+    {
+      "cluster": 1,
+      "customer": "C009",
+      "total_usd": 373.15
+    },
+    {
+      "cluster": 0,
+      "customer": "C010",
+      "total_usd": 2545.39
+    },
+    {
+      "cluster": 2,
+      "customer": "C011",
+      "total_usd": 1889.97
+    },
+    {
+      "cluster": 1,
+      "customer": "C012",
+      "total_usd": 1705.92
+    },
+    {
+      "cluster": 0,
+      "customer": "C013",
+      "total_usd": 2090.64
+    },
+    {
+      "cluster": 2,
+      "customer": "C014",
+      "total_usd": 980.76
+    },
+    {
+      "cluster": 1,
+      "customer": "C015",
+      "total_usd": 1990.02
+    },
+    {
+      "cluster": 0,
+      "customer": "C016",
+      "total_usd": 1486.02
+    },
+    {
+      "cluster": 0,
+      "customer": "C017",
+      "total_usd": 2609.28
+    },
+    {
+      "cluster": 1,
+      "customer": "C018",
+      "total_usd": 1288.66
+    },
+    {
+      "cluster": 0,
+      "customer": "C019",
+      "total_usd": 2762.64
+    },
+    {
+      "cluster": 2,
+      "customer": "C020",
+      "total_usd": 2045.39
+    },
+    {
+      "cluster": 1,
+      "customer": "C021",
+      "total_usd": 1649.56
+    },
+    {
+      "cluster": 0,
+      "customer": "C022",
+      "total_usd": 1694.07
+    },
+    {
+      "cluster": 2,
+      "customer": "C023",
+      "total_usd": 1313.17
+    },
+    {
+      "cluster": 1,
+      "customer": "C024",
+      "total_usd": 2532.26
+    },
+    {
+      "cluster": 0,
+      "customer": "C025",
+      "total_usd": 2384.75
+    },
+    {
+      "cluster": 2,
+      "customer": "C026",
+      "total_usd": 2058.72
+    },
+    {
+      "cluster": 1,
+      "customer": "C027",
+      "total_usd": 1014.04
+    },
+    {
+      "cluster": 0,
+      "customer": "C028",
+      "total_usd": 2757.08
+    },
+    {
+      "cluster": 2,
+      "customer": "C029",
+      "total_usd": 3078.68
+    },
+    {
+      "cluster": 1,
+      "customer": "C030",
+      "total_usd": 1283.49
+    },
+    {
+      "cluster": 0,
+      "customer": "C031",
+      "total_usd": 1938.82
+    },
+    {
+      "cluster": 2,
+      "customer": "C032",
+      "total_usd": 1526.83
+    },
+    {
+      "cluster": 1,
+      "customer": "C033",
+      "total_usd": 1239.12
+    },
+    {
+      "cluster": 0,
+      "customer": "C034",
+      "total_usd": 1488.07
+    },
+    {
+      "cluster": 2,
+      "customer": "C035",
+      "total_usd": 1418.4
+    },
+    {
+      "cluster": 1,
+      "customer": "C036",
+      "total_usd": 924.08
+    },
+    {
+      "cluster": 0,
+      "customer": "C037",
+      "total_usd": 1397.2
+    },
+    {
+      "cluster": 2,
+      "customer": "C038",
+      "total_usd": 1716.73
+    },
+    {
+      "cluster": 0,
+      "customer": "C039",
+      "total_usd": 1248.56
+    },
+    {
+      "cluster": 0,
+      "customer": "C040",
+      "total_usd": 1588.96
+    },
+    {
+      "cluster": 2,
+      "customer": "C041",
+      "total_usd": 1630.88
+    },
+    {
+      "cluster": 1,
+      "customer": "C042",
+      "total_usd": 1596.12
+    },
+    {
+      "cluster": 0,
+      "customer": "C043",
+      "total_usd": 2786.81
+    },
+    {
+      "cluster": 2,
+      "customer": "C044",
+      "total_usd": 2840.17
+    },
+    {
+      "cluster": 1,
+      "customer": "C045",
+      "total_usd": 1970.16
+    },
+    {
+      "cluster": 0,
+      "customer": "C046",
+      "total_usd": 2971.77
+    },
+    {
+      "cluster": 2,
+      "customer": "C047",
+      "total_usd": 1890.85
+    },
+    {
+      "cluster": 1,
+      "customer": "C048",
+      "total_usd": 1606.77
+    },
+    {
+      "cluster": 0,
+      "customer": "C049",
+      "total_usd": 2710.58
+    },
+    {
+      "cluster": 2,
+      "customer": "C050",
+      "total_usd": 1537.94
+    },
+    {
+      "cluster": 0,
+      "customer": "C051",
+      "total_usd": 1592.5
+    },
+    {
+      "cluster": 0,
+      "customer": "C052",
+      "total_usd": 2911.15
+    },
+    {
+      "cluster": 2,
+      "customer": "C053",
+      "total_usd": 1657.17
+    },
+    {
+      "cluster": 0,
+      "customer": "C054",
+      "total_usd": 1572.08
+    },
+    {
+      "cluster": 0,
+      "customer": "C055",
+      "total_usd": 3201.92
+    },
+    {
+      "cluster": 2,
+      "customer": "C056",
+      "total_usd": 1926.91
+    },
+    {
+      "cluster": 0,
+      "customer": "C057",
+      "total_usd": 890.33
+    },
+    {
+      "cluster": 0,
+      "customer": "C058",
+      "total_usd": 955.6
+    },
+    {
+      "cluster": 0,
+      "customer": "C059",
+      "total_usd": 1189.21
+    }
+  ]
+}
