@@ -23,11 +23,15 @@ Follow the README installation block, then: Change Market to Food in the categor
 
 ## Five interview questions
 
-1. **What problem does this project solve, and what is its unit of work?** Explain understand spending with editable categories, identify budget analysts as the audience, and trace one concrete example through the files above. Use the demonstration output rather than hypothetical impact.
-2. **Why did you choose the first design decision?** Use integer cents for ingestion and reconciliation before displaying currency. Show the corresponding implementation and a test that would fail if that property were removed.
-3. **How do you protect correctness when inputs or execution change?** Map merchant names to user-defined categories and retain unmatched transactions as Uncategorized. Explain the relevant invalid-input or edge-case test and distinguish a checked property from an untested assumption.
-4. **How do you make results inspectable and reproducible?** Cluster standardized category shares and transaction frequency so total spending does not dominate segments. Point to actual outputs and recorded commands. Explain why a successful example is weaker evidence than a tested boundary or independently reconciled total.
-5. **What would you improve before real deployment or real-data use?** Synthetic transactions; no bank connection, persistence of category preferences or financial advice. KMeans clusters are descriptive and depend on category definitions, scaling and k. Silhouette is an internal separation diagnostic, not business validation. Choose one limitation, describe the missing evidence, and propose a measurable acceptance check rather than promising production readiness.
+1. **Why keep money as integer cents?** Integer arithmetic avoids accumulating binary floating-point errors in transaction totals. Normalized shares are computed only when needed for analysis and clustering.
+
+2. **How do custom categories affect analysis?** User-defined rules reassign merchants before category totals and customer features are calculated. A change in the category mapping can therefore change the clusters.
+
+3. **What goes into the clustering model?** Normalized category spending shares and transaction-frequency information describe customer behavior. Standardization prevents a larger numerical scale from dominating Euclidean distance.
+
+4. **What does silhouette measure?** It compares within-cluster cohesion with separation from other clusters. It is an internal diagnostic, not proof that the segments are useful or stable business categories.
+
+5. **Are the clusters financial recommendations?** No. The transactions are synthetic and the groups are descriptive. The app does not infer creditworthiness, prescribe investments or claim real savings.
 
 ## Independent exercise
 
@@ -41,6 +45,6 @@ The implementation was developed with substantial AI assistance under Abhijith V
 
 Suggested factual bullet after personally validating the demo:
 
-- Implemented and validated understand spending with editable categories using pandas · scikit-learn · Flask, with rule categories and documented correctness checks and limitations.
+- Built an editable-rule spending dashboard with integer-cent reconciliation and standardized customer clustering, including silhouette diagnostics on synthetic transactions.
 
 Use [VERIFICATION.md](VERIFICATION.md) to add only measured numbers. Do not claim production traffic, users, savings, upstream acceptance or cloud deployment without corresponding evidence.
